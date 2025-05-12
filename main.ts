@@ -12,7 +12,7 @@ app.use("/favicon.ico", serveStatic({ root: "./dist" }));
 app.get("/elf-ui/*", serveStatic({ path: "./dist/index.html" }));
 
 app.get("/api/health", (c: Context) => {
-  return c.json({ status: "ok!" });
+  return c.json({ status: "ok!!" });
 });
 
 Deno.serve(app.fetch);
